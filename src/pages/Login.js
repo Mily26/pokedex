@@ -4,6 +4,7 @@ import Button from '../components/Button'
 import { useDispatch } from 'react-redux'
 import { useHistory } from 'react-router-dom'
 import {isLoged} from '../redux/actions'
+import './login.scss'
 
 function Login() {
     const [userData, setUserData] = useState({})
@@ -34,10 +35,19 @@ function Login() {
     }
 
     return (
-        <>
-        <Input handleChange={handleChange} />
-        <Button handleClick={handleClick}/>
-        </>
+        <div>
+            <img className="pokebola" src="pokebola.png" alt="logo" />
+            <img className="title" src="title.png" alt="pokedex" />
+            <div className="contentCard">
+                
+                <div className="card">
+                <Input handleChange={handleChange} />
+                <Button handleClick={handleClick}/>
+                </div>
+            </div>
+        </div>
+        
+        
     )
 }
 

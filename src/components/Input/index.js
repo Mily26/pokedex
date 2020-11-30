@@ -1,4 +1,5 @@
 import React from 'react'
+import './style.scss'
 
 function Input(props) {
     function handleChange(event) {
@@ -7,8 +8,8 @@ function Input(props) {
     return(
         <div className="cardLogin">
             <div className="userInput">
-                <input type="text" name="user" onChange={handleChange} />Usuario
-                <input type="password" name="password" onChange={handleChange} />Contraseña
+                <input className="textbox" type="text" name="user" onChange={handleChange} placeholder="Usuario"/>
+                <input className="textbox" type="password" name="password" onChange={handleChange} placeholder="Contraseña"/>
             </div>
         </div>
         

@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux'
 import { Redirect } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import {getPokemonAsync} from '../redux/actions'
+import './pokedex.scss'
 
 
 function Pokedex() {
@@ -30,10 +31,14 @@ function Pokedex() {
 
     return (
         <div>
-            <h1>Bienvenidos a nuestro Pokedex</h1>
-            <input type="text" placeholder="Escribir número de Pokemon" value={number} onChange={handleChange} />
-            {poke.isPending ? <p>Cargando...</p> : <button onClick={search}>Buscar</button>}
+            <h1 className="welcome">Bienvenidos</h1>
+            <span class="input">
+            <input type="text" placeholder="Escribir número de Pokemon" value={number} onChange={handleChange}  className="search"/>
+            {poke.isPending ? <p>Cargando...</p> : <button onClick={search} className="btnSearch">Buscar</button>}
             {poke.isError ? <p>Ocurrió un error, verifique y reintente.</p> : ''}
+		<span></span>	
+	        </span>
+            
 
         </div>
     )

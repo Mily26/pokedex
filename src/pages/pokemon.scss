@@ -1,0 +1,38 @@
+.pokemon {
+    width: 400px;
+    background-color: #16BAC5;
+    padding: 1em;
+    margin: 45px auto;
+    border-radius: 1em;
+    
+    min-height: 40vh;
+    
+    text-align: center;
+
+    img {
+        width: 200px;
+        background-color: aliceblue;
+        border-radius: 50%;
+        border: 1px solid darkcyan;
+    }
+    p {
+        font-size: 20px;
+    text-transform: capitalize;
+    color: aliceblue;
+    font-weight: 700;
+    font-family: sans-serif;
+    }
+    .back {
+        background: WHITE;
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 20px;
+        color: #16BAC5;
+        transition: all ease 0.3s;
+
+        &:hover {
+            background-color: #5DFDCB;
+            color: darkcyan;
+        }
+    }
+}
