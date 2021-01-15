@@ -33,7 +33,7 @@ function Pokedex() {
         <div>
             <h1 className="welcome">Bienvenidos</h1>
             <span class="input">
-            <input type="text" placeholder="Escribir número de Pokemon" value={number} onChange={handleChange}  className="search"/>
+            <input type="text" placeholder="Escribir número de Poke" value={number} onChange={handleChange}  className="search"/>
             {poke.isPending ? <p>Cargando...</p> : <button onClick={search} className="btnSearch">Buscar</button>}
             {poke.isError ? <p>Ocurrió un error, verifique y reintente.</p> : ''}
 		<span></span>	

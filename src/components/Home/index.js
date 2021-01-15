@@ -7,7 +7,7 @@ function Home() {
             <h1>¡Bienvenidos a nuestro Pokedex!</h1>
         </div>
         <div className="input-poke">
-            <input type="text" placeholder="Escribir número de Pokemon"></input>
+            <input type="text" placeholder="Escribir número de Poke"></input>
         </div>
         <Button />
         </>
